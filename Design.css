@@ -1,0 +1,112 @@
+body{
+    background-image: url(Bench-Background-15-2560x1920.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+form{
+    position: relative;
+    text-align: center;
+    max-height: 500;
+    max-width: 500;
+    color:rgb(255, 0, 0);
+    margin:0 auto;
+    box-shadow: 2;
+    background-color: antiquewhite;
+}
+legend{
+    position: relative;
+    text-align: center;
+    max-height: 500;
+    max-width: 500;
+    color:mediumturquoise;
+    margin:0 auto;
+    box-shadow: 2;
+    background-color: antiquewhite;
+}
+button{
+    width: 75%;
+    height: 30px;
+    border: none;
+}
+button:hover{
+    color:red;
+    background-color: black
+}
+.main
+{
+    padding: 40% 6%;
+    width: 100%;
+}
+input
+{
+    padding: 2%;
+    margin: 4px;
+}
+table
+{
+    width: 100%;
+    color:rgb(255, 0, 0);
+}
+.pas
+{
+    color: black;
+}
+.pas:hover
+{
+    color: blue;
+    cursor: pointer;
+}
+p{
+    color:burlywood;
+    background-color: black;
+}
+p:hover{
+    color:white;
+    background-color: brown;
+    counter-increment: unset;
+    cursor: pointer;
+}
+.center{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+}
+input[type="checkbox"]
+{
+    position: relative;
+    width:80px;                                                                                     
+    height:10px;
+    -webkit-appearance: none;
+    outline: none;
+    border-radius: 30px;
+    background:black;
+    box-shadow: inset 0 0 2px rgba(0, 0,0, .2);
+    transition: 1s;
+}
+input[type="checkbox"]:checked
+{
+    background: #03a9f4;
+    width: 80px;
+    height: 20px;
+    
+}
+input[type="checkbox"]:before
+{
+   content: "";
+   position: absolute;
+   width: 40px;
+   height: 20px;
+   border-radius: 20px;
+   top: 0;
+   left: 0;
+   background: rgb(197, 0, 0);
+   transform:scale(1);
+   box-shadow: 0 2px 5px rgba(0, 0,0, .2);
+   transition: .5s;
+
+}
+input:checked[type="checkbox"]:before
+{
+    left: 40px;
+}

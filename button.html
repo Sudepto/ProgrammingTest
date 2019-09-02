@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="button.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="center">
+    <input type="checkbox" value="" id="theme">
+</div>
+</body>
+<script>
+    $(document).ready(function(){
+        $("#theme").click(function(){
+            if(this.checked==true)
+            {
+                $("body").css("background-color","white")
+                $('input[type="checkbox"]').css("box-shadow","0 0 0 4px rgb(104, 185, 194), 0 0 0 5px rgb(104, 180,194),inset 0 0 0 1px rgba(52, 158, 161, 0.74)")
+            }
+            else{
+                $("body").css("background-color","dimgray")
+                $('input[type="checkbox"]').css("box-shadow","0 0 0 4px rgb(85, 84, 84), 0 0 0 5px rgb(41, 39, 39),inset 0 0 0 1px rgba(99, 89, 45, 0.863)")
+            }
+        });
+    });
+</script>
+</html>

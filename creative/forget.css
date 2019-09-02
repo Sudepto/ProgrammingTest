@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, sans-serif;
+    background: url(bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.infobox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-sizing: border-infobox;
+    box-shadow: 0 15px 25px rgba(255, 255, 255, 0.2);
+}
+.infobox h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+}
+.infobox .inputbox{
+    position: relative;
+}
+.infobox .inputbox input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    outline: none;
+    background:transparent;
+}
+.infobox .inputbox label{
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: black;
+    pointer-events: none;
+    transition: .5s;
+}
+.infobox .inputbox input:focus ~ label,
+.infobox .inputbox input:valid ~ label
+{
+    top:-27px;
+    left:0;
+    color:blue;
+    font-size: 15px;
+}
+.infobox input[type="submit"]{
+    border: none;
+    background: transparent;
+    color: black;
+    height: 30px;
+    width:50%;
+    text-align: center;
+    margin-left: 25%;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.infobox input[type="submit"]:hover
+{
+    cursor: pointer;
+    border-radius: 15px;
+    background: steelblue;
+    color: white;
+}

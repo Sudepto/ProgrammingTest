@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="forget.css">
+    <link rel="stylesheet" href="font\css\all.css">
+        <script src="jquery\jquery-3.3.1.min.js"></script>
+    <title>Forget</title>
+</head>
+<body>
+    <div class="infobox">
+        <h2><i class="fas fa-user-lock"></i> Forget Password</h2>
+        <h5>Please enter your email address below and we will send you information to change your password</h5>
+        <form action="">
+                <div class="inputbox">
+                        <input type="text" name="recoveryemail" id="recemail" required>
+                        <label>Email Address</label>
+                    </div>
+            <input type="submit" name="recsubmit" value="Reset Password" id="recet">
+        </form>
+    </div>
+    <script>
+$(document).ready(function(){
+    $('#recet').click(function(e) {
+        var sEmail = $('#recemail').val();
+        var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+        if ($.trim(sEmail).length == 0) {
+            alert("Invalied Email");
+            e.preventDefault(e);
+        }
+        else {
+            if (filter.test(sEmail)) {
+        }
+        else {
+            alert("Invalied Email");
+            e.preventDefault(e);
+        }
+        }
+    });
+})
+    </script>
+</body>
+</html>

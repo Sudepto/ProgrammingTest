@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <title>Login</title>
+</head>
+<body>
+<div class="loginbox">
+    <h2>Login Information</h2>
+    <form action="#" method="post">
+        <label>Username</label>
+        <input type="text" name="usernane" id="user" class="inputbox">
+        <br>
+        <label>Password</label>
+        <i class="far fa-eye-slash pos" id="icon"></i>
+        <input type="password" name="password" id="pass" class="inputbox">
+        <br>
+        <input type="submit" value="Login">
+    </form>
+</div>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        $("#icon").click(function(){
+            if($(this).hasClass("fa-eye-slash"))
+            {
+                $(this).removeClass("fa-eye-slash");
+                $(this).addClass("fa-eye");
+                $("#pass").prop("type","text");
+            }
+            else
+            {
+                $(this).removeClass("fa-eye");
+                $(this).addClass("fa-eye-slash");
+                $("#pass").prop("type","password");
+            }
+        })
+    })
+</script>
